@@ -1,5 +1,9 @@
+import org.w3c.dom.css.Rect;
+
 import javax.swing.JPanel;
-import java.awt.BorderLayout;
+import java.awt.*;
+import java.awt.geom.Ellipse2D;
+import java.awt.geom.RoundRectangle2D;
 
 /**
  * Class ShapePanel:  holds a ShapeComponent and a ButtonPanel for drawing shapes
@@ -11,7 +15,7 @@ public class ShapePanel extends JPanel {
 
   /** A constructor that takes no arguments */
   public ShapePanel () {
-    shapeComponent = new ShapeIComponent(500, 500);
+    shapeComponent = new ShapeIComponent(1000, 1000);
     buttonPanel = new ButtonPanel(shapeComponent);
     init(); // call helper method
   }

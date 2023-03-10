@@ -1,4 +1,4 @@
-import java.awt.Graphics;
+import java.awt.*;
 
 /**
  * Class Rectangle:  inherits from Shape and draws a rectangle
@@ -16,7 +16,7 @@ public class Rectangle extends Shape {
   @Override
   public void draw(Graphics g) {
     // set the color
-    g.setColor(getColor());
+    g.setColor(Color.white);
     
     // draw the rectangle given the top left point and width and height
     g.drawRect(getMinX(), getMinY(), getWidth(), getHeight()); // the getter methods here are INHERITED FROM SHAPE!

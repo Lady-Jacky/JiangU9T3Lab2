@@ -1,4 +1,5 @@
 import javax.swing.JFrame;
+import java.awt.*;
 
 public class ShapeRunner {
   public static void main (String args[]) {

@@ -10,22 +10,33 @@ public class Shape {
   // public constants
   public static final String RECTANGLE = "Rectangle"; // constant for rectangle
   public static final String OVAL = "Oval";           // constant for oval
+  public static final String ARC = "Arc";           // constant for ARC
+  public static final String LINE = "Line";           // constant for Line
 
   // private instance variables
-  private Color color; // color to draw shape in
   private Point p1; // first point; a Point object has an x and y attribute, e.g. p1.x and p1.y
   private Point p2; // second point; a Point object has an x and y attribute, e.g. p2.x and p2.y
 
   /** Constructor */
   public Shape() {
-    color = Color.black;
     p1 = new Point();
     p2 = new Point();
   }
-  
-  public Color getColor() {
-    return color;
+
+  public int getP2X() {
+    return (int) p2.getX();
   }
+  public int getP2Y() {
+    return (int) p2.getY();
+  }
+
+  public int getP1X() {
+    return (int) p1.getX();
+  }
+  public int getP1Y() {
+    return (int) p1.getY();
+  }
+
 
   /**
    * Method to get minimum x value of the bounding rectangle

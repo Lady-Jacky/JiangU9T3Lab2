@@ -4,13 +4,13 @@ import java.awt.*;
  * Class Oval:  inherits from Shape and handles oval shapes
  * @author Barb Ericson
  */
-public class drawArc extends Shape {
+public class Arc extends Shape {
   private int arcAngle;
   private int startAngle;
   /**
    * Constructor
    */
-  public drawArc() {
+  public Arc() {
     super();
     this.arcAngle = 70;
     this.startAngle = 30;
@@ -24,7 +24,7 @@ public class drawArc extends Shape {
   @Override
   public void draw(Graphics g) {
     // set the color to draw the shape in
-    g.setColor(getColor());
+    g.setColor(Color.gray);
 
     // draw the oval given the top left corner of the enclosing
     // rectangle and the width and height
